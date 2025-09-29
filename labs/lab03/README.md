@@ -30,5 +30,3 @@ Chọn quy trình *Withdraw Cash* của ATM.
 ## 4) Hình ảnh đính kèm
 - *Use Case*: uc-withdraw-atm.png
 - *Sequence*: sq-withdraw-atm.png
-
-
