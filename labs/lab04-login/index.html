@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ATM Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <form id="loginForm" novalidate>
+      <h1>ATM Login</h1>
+
+      <div class="field">
+        <label for="username">Username</label>
+        <input id="username" name="username" type="text" autocomplete="username" required placeholder="vd: demo" />
+        <small class="error" id="userErr"></small>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <div class="password-wrap">
+          <input id="password" name="password" type="password" autocomplete="current-password" required placeholder="vd: demo123" />
+          <button type="button" id="togglePw" aria-label="Show/Hide password">👁</button>
+        </div>
+        <small class="error" id="passErr"></small>
+      </div>
+
+      <div class="row">
+        <label class="remember">
+          <input type="checkbox" id="rememberMe" /> Remember me
+        </label>
+        <a class="link" href="#" id="forgot">Quên mật khẩu?</a>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn primary">Login</button>
+        <button type="reset" class="btn" id="cancelBtn">Cancel</button>
+      </div>
+
+      <p class="hint">Tài khoản demo: <code>demo / demo123</code> hoặc <code>admin / 123456</code></p>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
