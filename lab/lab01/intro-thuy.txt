@@ -1,0 +1,4 @@
+less
+Giới thiệu - Trần Nguyễn Phương Thùy
+Kỳ vọng môn học: Nắm vững Git. front-end cơ bản, và workflow teamwork.
+Mảng mạnh: HTML/CSS/JS, kiểm thử giao diện.
