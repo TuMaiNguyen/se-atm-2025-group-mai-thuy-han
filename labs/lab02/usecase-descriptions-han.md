@@ -1,6 +1,6 @@
 # Use Case Descriptions – Hân
 
-   1) Deposit Cash
+   ## 1) Deposit Cash
 *Actor:* Customer  
 *Goal:* Nộp tiền mặt vào tài khoản tại ATM.  
 *Preconditions:* Thẻ hợp lệ; PIN đúng; khay nhận tiền hoạt động.  
@@ -23,7 +23,7 @@
 
 
 
-   2) Maintain ATM
+  ## 2) Maintain ATM
 *Actor:* Technician  
 *Goal:* Bảo trì ATM (nạp tiền, thay giấy, kiểm tra thiết bị).  
 *Preconditions:* Kỹ thuật viên có *quyền bảo trì*, đăng nhập Service Mode.  
