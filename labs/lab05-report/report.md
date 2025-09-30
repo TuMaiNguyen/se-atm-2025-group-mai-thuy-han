@@ -15,8 +15,19 @@ Dự án áp dụng quy trình phần mềm từ yêu cầu → thiết kế →
 ## 3. Artifacts (tạo từ các lab trước)
 - **Use Case (rút gọn Withdraw)**  
   ![Use Case](../lab03/uc-withdraw-atm.png)
+  ### Use Case: Withdraw Cash
+- *Actor*: Customer
+- *Include*: Authenticate (Enter PIN), Print Receipt
+- *Luồng chính*: chọn rút tiền → nhập số tiền → kiểm tra số dư → nhả tiền → (opt) in biên lai
 - **Sequence Diagram (Withdraw)**  
   ![Sequence](../lab03/sq-withdraw-atm.png)
+  ### Sequence: Withdraw Cash
+- *ATM_UI* (boundary): tương tác màn hình/phím
+- *ATM_Controller* (control): điều phối, gọi BANK, CASH, PRN
+- *BankSystem*: verify card, authenticate, checkBalance, debit, rollback
+- *CashDispenser*: dispense
+- *ReceiptPrinter*: print
+- *Nhánh alt*: PIN sai/khóa thẻ; thiếu tiền; lỗi nhả tiền → rollback
 - **Form Login (source)**: `labs/lab04-login/`  
   **Demo**: `docs/lab04/` → mở bằng GitHub Pages
 
