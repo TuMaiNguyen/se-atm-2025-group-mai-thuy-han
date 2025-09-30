@@ -68,3 +68,55 @@ Dự án áp dụng quy trình phần mềm từ yêu cầu → thiết kế →
 - Lab 04 (source): `labs/lab04-login/`
 - Lab 04 (demo): `docs/lab04/` (GitHub Pages)
 
+## 10. Form Login (HTML/CSS/JS) – Hân
+*Thư mục nguồn:* labs/lab04-login/  
+*Demo Pages:* docs/lab04/ (ví dụ: https://<username>.github.io/<repo>/lab04/)
+
+*Chức năng:*
+- Trường *Username*, *Password*, *Remember me*
+- Nút *Login* và *Cancel*
+- *Validate* bằng JavaScript:
+  - Username: không rỗng, ≥ 3 ký tự, chỉ [a-zA-Z0-9_]
+  - Password: không rỗng, ≥ 6 ký tự
+- *Show/Hide password* (nút 👁/🙈)
+- *Remember me* lưu username vào localStorage
+- *Toast* báo thành công/thất bại
+
+*Cấu trúc file:*
+- labs/lab04-login/index.html — Mai (HTML khung)
+- labs/lab04-login/styles.css — Thùy (CSS, responsive)
+- labs/lab04-login/app.js — Hân (JS: validate, remember, toggle, cancel)
+
+*Kiểm thử nhanh:*
+| Case           | Bước thao tác                                     | Kỳ vọng                                  |
+|----------------|----------------------------------------------------|-------------------------------------------|
+| Rỗng           | Để trống username/password → nhấn Login           | Hiện lỗi ở input tương ứng                |
+| Sai pattern    | Username có ký tự đặc biệt                         | Báo “Chỉ chữ, số, _”                      |
+| Ngắn           | Password < 6                                       | Báo lỗi độ dài                            |
+| Sai thông tin  | Nhập user/abc                                    | Toast thất bại + báo lỗi ở password       |
+| Hợp lệ (demo)  | Nhập demo / demo123                              | Toast thành công, form reset              |
+| Remember me    | Tick checkbox, đăng nhập thành công                | Lần sau mở trang tự điền sẵn username     |
+
+
+## 11. Hướng dẫn push code Git (HTTPS) – Hân
+(Thực hiện trên máy cá nhân có cài Git)
+
+    # 1) Tải code về lần đầu
+    git clone https://github.com/<username>/<repo>.git
+    cd <repo>
+
+    # 2) Tạo nhánh làm việc mới (ví dụ Hân cập nhật report)
+    git checkout -b han/lab05-doc
+
+    # 3) Thêm/sửa file
+    #   ... chỉnh labs/lab05-report/report.md ...
+
+    # 4) Lưu thay đổi và đẩy lên GitHub
+    git add labs/lab05-report/report.md
+    git commit -m "docs(lab05): add login section & git push guide – Han"
+    git push -u origin han/lab05-doc
+
+    # 5) Mở Pull Request (trên web GitHub)
+    #    base: main  |  compare: han/lab05-doc
+
+
