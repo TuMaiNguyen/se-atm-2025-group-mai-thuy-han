@@ -1,4 +1,6 @@
-Init Lab 07
+**Init Lab 07**
+
+
 ## 2) Cách chạy trên Windows (XAMPP)
 
 *Các bước:*
@@ -22,7 +24,8 @@ Nếu lỗi: kiểm tra MySQL đang chạy, DB/USER đúng, hoặc số dư khô
 
 
 
-## 13) Screenshot kết quả (bằng chứng chạy được)
+
+## 3) Screenshot kết quả (bằng chứng chạy được)
 Sau khi chạy thành công, chụp màn hình terminal, lưu vào:
 labs/lab07-withdraw-module/assets/run-success.png
 
