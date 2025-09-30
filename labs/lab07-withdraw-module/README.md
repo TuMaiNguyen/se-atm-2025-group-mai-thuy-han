@@ -26,7 +26,7 @@ Nếu lỗi: kiểm tra MySQL đang chạy, DB/USER đúng, hoặc số dư khô
 
 ## 3) Screenshot kết quả (bằng chứng chạy được)
 Sau khi chạy thành công, chụp màn hình terminal, lưu vào:
-labs/lab07-withdraw-module/assets/run-success.png
+labs/lab07-withdraw-module/run-success.png
 
 ![Run success](assets/run-success.png)
 *Yêu cầu:* Python 3.10+, MySQL đang chạy (XAMPP → Start MySQL).
