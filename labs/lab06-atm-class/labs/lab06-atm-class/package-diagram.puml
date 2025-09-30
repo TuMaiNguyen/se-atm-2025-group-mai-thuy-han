@@ -1,0 +1,33 @@
+@startuml
+skinparam style strictuml
+skinparam packageStyle rectangle
+title ATM - Package Diagram
+
+package "UI" {
+  [ATMUI]
+}
+
+package "Controller" {
+  [ATMController]
+}
+
+package "BankService" {
+  [BankSystem]
+}
+
+package "Hardware" {
+  [CardReader]
+  [Keypad]
+  [Screen]
+  [CashDispenser]
+  [ReceiptPrinter]
+}
+
+ATMUI --> ATMController : user actions
+ATMController --> BankSystem : verify/debit/credit
+ATMController --> CardReader : read/eject
+ATMController --> Keypad : getPIN
+ATMController --> Screen : display
+ATMController --> CashDispenser : dispense
+ATMController --> ReceiptPrinter : print
+@enduml
