@@ -10,3 +10,4 @@
 ## Labs
 - Lab 02: Use Case Diagram & Descriptions — [labs/lab02/](labs/lab02/)
 - Lab 03: UC + Sequence (Withdraw) — [labs/lab03/](labs/lab03/)
+- Lab 04: Demo — https://tumainguyen.github.io/se-atm-2025-group-mai-thuy-han/lab04/
