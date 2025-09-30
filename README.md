@@ -36,3 +36,5 @@
 | Lab 04 – JS                       | Hân                    | *(trong chuỗi PR Lab 04)* |
 
 > Ghi chú: Click vào số PR (ví dụ **#24**) để xem chi tiết diff/commit và thời điểm merge. Lịch sử từng file có thể kiểm tra tại **History** trên GitHub.
+
+- Lab 06: Class & Package Diagrams — [labs/lab06-atm-class/](labs/lab06-atm-class/)
