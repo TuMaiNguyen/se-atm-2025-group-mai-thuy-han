@@ -19,3 +19,9 @@ Cách B: Chạy local server:
 python -m http.server 8000
 # tab khác:
 pytest labs/lab08-testing/selenium_test_login.py -q --html labs/lab08-testing/reports/selenium_report.html --self-contained-html
+### Ảnh minh chứng (Thùy)
+- *Unit & Selenium PASS*  
+  ![Pytest pass (Thùy)](reports/pytest-pass-thuy.png)
+
+- *Ví dụ FAIL (minh họa)*  
+  ![Pytest fail (Thùy)](reports/pytest-fail-thuy.png)
