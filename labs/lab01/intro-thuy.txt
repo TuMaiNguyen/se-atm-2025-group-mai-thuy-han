@@ -1,0 +1,14 @@
+git checkout -b thuy/lab01
+git config user.name  "Trần Nguyễn Phương Thùy"
+git config user.email "n23dcpt107@student.ptithcm.edu.vn"
+
+mkdir -p labs/lab01
+cat << 'EOF' > labs/lab01/intro-thuy.txt
+Giới thiệu – Trần Nguyễn Phương Thùy
+Kỳ vọng môn học: Nắm vững Git, front-end cơ bản, và workflow teamwork.
+Mảng mạnh: HTML/CSS/JS, kiểm thử giao diện.
+EOF
+
+git add labs/lab01/intro-thuy.txt
+git commit -m "docs(lab01): add Thuy's introduction"
+git push -u origin thuy/lab01
